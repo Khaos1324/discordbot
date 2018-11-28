@@ -4,7 +4,3 @@ asyncio
 simplejson
 Pymoe
 requests
-os
-secrets
-time
-youtube_dl
