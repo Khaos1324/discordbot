@@ -12,8 +12,7 @@ from discord.ext import commands
 from discord.ext.commands import Bot
 from discord.voice_client import VoiceClient
 import asyncio
-if not discord.opus.is_loaded():
-    discord.opus.load_opus('opus')
+
 
 players = {}
 queues = {}
