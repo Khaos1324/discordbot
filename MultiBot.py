@@ -30,6 +30,7 @@ os.chdir(r'C:\Users\Charl\Desktop\Discord Bot')
 
 #Leveling Command
 
+api = str(os.environ.get('RiotKey'))
 
 #Startup
 
@@ -158,6 +159,6 @@ async def clear(ctx, amount=10):
 
 #Token for bot
 
-bot.run("NDk0MjgzMDQ3OTkxMjQ2ODU4.DoxgNg.GhwefeK2qboH4uhKMMv5jhLXOGw")
+bot.run(str(os.environ.get('BotToken')))
 
 #https://discordapp.com/oauth2/authorize?client_id=494283047991246858&scope=bot
