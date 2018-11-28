@@ -4,3 +4,4 @@ asyncio
 simplejson
 Pymoe
 requests
+youtube_dl
