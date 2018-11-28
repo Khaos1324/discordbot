@@ -1,1 +1,8 @@
 git+git://github.com/Rapptz/discord.py.git@async#egg=discord
+discord
+asyncio
+json
+os
+secrets
+time
+youtube_dl
