@@ -1,7 +1,9 @@
 git+git://github.com/Rapptz/discord.py.git@async#egg=discord
 discord
 asyncio
-json
+simplejson
+Pymoe
+requests
 os
 secrets
 time
