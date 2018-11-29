@@ -23,7 +23,7 @@ def check_queue(id):
         players[id] = player
         player.start()
 
-bot = commands.Bot(command_prefix='.')
+bot = commands.Bot(command_prefix='--')
 bot.remove_command('help')
 
 
@@ -35,7 +35,7 @@ api = str(os.environ.get('RiotKey'))
 
 @bot.event
 async def on_ready():
-    await bot.change_presence(game=discord.Game(name='.help for commands | In Develepment! :D'))
+    await bot.change_presence(game=discord.Game(name='--help for commands | In Develepment! :D'))
     print ("ready when you are xd")
     print ("i am running on " + bot.user.name)
     print ("with the ID" + bot.user.id)
@@ -125,16 +125,16 @@ async def info(ctx, user: discord.Member):
 @bot.command(pass_context=True)
 async def help(ctx):
     embed = discord.Embed(title="Help",description="Here are all the commands for the bot", color=0x00ff00)
-    embed.add_field(name=".help", value='Show the commands for the bot', inline=True)
-    embed.add_field(name=".ping", value='A simple ping pong command', inline=True)
-    embed.add_field(name=".info (username)", value='Shows information of the user on the server', inline=True)
-    embed.add_field(name=".clear (#)", value='Clears messages ; Min = 2 Max = 100', inline=True)
-    embed.add_field(name=".join", value='Makes the bot join the voice channel (You must be in one)', inline=True)
-    embed.add_field(name=".play (YouTube Link)", value='Plays the youtube link', inline=True)
-    embed.add_field(name=".resume", value='Makes the bot continue the music', inline=True)
-    embed.add_field(name=".pause", value='Makes the bot pause the music', inline=True)
-    embed.add_field(name=".stop", value='Makes the bot stop playing the music', inline=True)
-    embed.add_field(name=".leave", value='Makes the bot leave the channel', inline=True)
+    embed.add_field(name="--help", value='Show the commands for the bot', inline=True)
+    embed.add_field(name="--ping", value='A simple ping pong command', inline=True)
+    embed.add_field(name="--info (username)", value='Shows information of the user on the server', inline=True)
+    embed.add_field(name="--clear (#)", value='Clears messages ; Min = 2 Max = 100', inline=True)
+    embed.add_field(name="--join", value='Makes the bot join the voice channel (You must be in one)', inline=True)
+    embed.add_field(name="--play (YouTube Link)", value='Plays the youtube link', inline=True)
+    embed.add_field(name="--resume", value='Makes the bot continue the music', inline=True)
+    embed.add_field(name="--pause", value='Makes the bot pause the music', inline=True)
+    embed.add_field(name="--stop", value='Makes the bot stop playing the music', inline=True)
+    embed.add_field(name="--leave", value='Makes the bot leave the channel', inline=True)
     embed.add_field(name="LEVELING SYSTEM IS OFF", value='There is a bug with the leveling system that needs to be fixed. All data is saved.', inline=True)
     embed.add_field(name="Reminder:", value='This bot is still in development. To request commands or report a bug, please go to this link: https://goo.gl/forms/x7jBnKKGFxGq2Ui92', inline=True)
     embed.set_thumbnail(url=bot.user.avatar_url)
